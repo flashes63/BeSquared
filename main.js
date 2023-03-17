@@ -227,6 +227,7 @@ document.addEventListener("DOMContentLoaded", () => {
         location.reload();
     }
     function check(){
+        correct = 0;
         checkCount += 1;
         count.textContent = "Check(s): "  + checkCount;
         for(let i = 0; i < 16; i ++){
