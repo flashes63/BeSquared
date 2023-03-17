@@ -246,7 +246,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 filledChoices[currentSquare.id] = '1';
             }
         }
-        let correct = 16;
         if(correct == 16){
             document.getElementById('nochecks').textContent = checkCount ;
             document.getElementById('congratsPop').style.visibility = 'visible';
