@@ -227,13 +227,13 @@ document.addEventListener("DOMContentLoaded", () => {
         location.reload();
     }
     function check(){
-        correct = 0;
+        //correct = 0;
         checkCount += 1;
         count.textContent = "Check(s): "  + checkCount;
         for(let i = 0; i < 16; i ++){
             let currentSquare = document.getElementById(i);
             if(currentSquare.textContent == wordArray[i]){
-                correct +=1;
+                //correct +=1;
                 currentSquare.style.backgroundColor = '#a8dadc';
                 currentSquare.style.border = " 2px solid #a8dadc";
                 currentSquare.removeEventListener('click',sonclick);
@@ -247,7 +247,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 filledChoices[currentSquare.id] = '1';
             }
         }
-        if(correct == 16){
+        //if(correct == 16){
             document.getElementById('nochecks').textContent = checkCount ;
             document.getElementById('congratsPop').style.visibility = 'visible';
             document.getElementById('congratsPop').style.opacity = 1;
