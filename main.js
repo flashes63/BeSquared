@@ -232,7 +232,7 @@ document.addEventListener("DOMContentLoaded", () => {
         for(let i = 0; i < 16; i ++){
             let currentSquare = document.getElementById(i);
             if(currentSquare.textContent == wordArray[i]){
-                //correct +=1;
+                correct +=1;
                 currentSquare.style.backgroundColor = '#a8dadc';
                 currentSquare.style.border = " 2px solid #a8dadc";
                 currentSquare.removeEventListener('click',sonclick);
