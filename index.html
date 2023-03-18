@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeSquared</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <div id="container">
+
+            <div id="game">
+                <div id="gameContainer">
+                    <h1 class="title">BeSquared</h1>
+                    <h3 id="checkCount">Check(s): 0</h3>
+                    <div id="boardContainer">
+                        <div id="before" ><img id="leftArrow" src="left-tri.PNG"/></div>
+                        <div id="board"></div>
+                        <div id="after"><img id="rightArrow" src="right-tri.PNG"/></div>
+                    </div>
+                    <div id="choiceContainer">
+                        <div id="choiceBoard"></div>
+                    </div> 
+                    <div id="buttonContainer">
+                        <a href='#helpPop' class='button' id="helpButton"><img src='help.PNG' alt="help" /></a>
+                        <div class="button" id="restartButton"><img src='./restart.PNG' alt="restart" /></div>
+                        <div class="button" id="checkButton"><img src='./check.PNG' alt="check" /></div>
+                        <a href="#hintPop" class="button" id="hintButton"><img src='./hint.PNG' alt="hint" /></a>
+                    </div>
+                    
+                    <div class="overlay" id="helpPop">
+                        <div class="wrapper">
+                            <h1>How to Play</h1>
+                            <a href="#" class="close">&times;</a>
+                            <div class="content">
+                                <div class="container">
+                                    <div class="slogan">Make every row and every column a word.</div>
+                                    <ul>
+                                        <li>6 hint letters are given.</li>
+                                        <li>Fill in the squares with the letters given to make a word.</li>
+                                        <li>Press the 'check' button to check if the letters are in the right place.</li>
+                                        <p></p>
+                                        <img style="width: 50px" src="bluebox.PNG"/>
+                                        <li>A light blue box means the letter is in the right place.</li>
+                                        <li>Press the 'hint' button to check out the meanings of the words in each column and row.</li>
+                                        <li>Press the 'restart' button to restart the puzzle.</li>
+                                    </ul>
+                                </div>
+                            </div>   
+                        </div>   
+                    </div>
+                    <div class="overlay" id="congratsPop" >
+                        <div class="wrapper" >
+                            <h1>Congrats!</h1>
+                            <a href="https://besquared.netlify.app" class="close">&times;</a>
+                            <div class="content">
+                                <div class="container">
+                                    <div>You solved the puzzle in </div>
+                                    <h2 id="nochecks">1</h2>
+                                    <div>check(s).</div>
+                                </div>
+                            </div>   
+                        </div>   
+                    </div>
+                    <div class="overlay" id="hintPop">
+                        <div class="wrapper">
+                            <h1>Hints</h1>
+                            <a href="#" class="close">&times;</a>
+                            <div class="content">
+                                <div class="container">
+                                    <div class="slogan">Rows</div>
+                                    <ol>
+                                        <li id="a1">1</li>
+                                        <li id="a2">2</li>
+                                        <li id="a3">3</li>
+                                        <li id="a4">4</li>
+                                    </ol>
+                                    <div class="slogan">Columns</div>
+                                    <ol>
+                                        <li id="d1">1</li>
+                                        <li id="d2">2</li>
+                                        <li id="d3">3</li>
+                                        <li id="d4">4</li>
+                                    </ol>
+                                </div>
+                            </div>   
+                        </div>   
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div id="footer">made by Un Lam Leong 2022</div>
+</body>
+</html>
